@@ -15,7 +15,7 @@ const ContainerCursos =() => {
         .then((data)=>{
             const lista = data.docs.map((item)=>{
                 return {
-                    ...item.data,
+                    ...item.data(),
                     id: item.id
                 }
             })
@@ -35,7 +35,7 @@ const ContainerCursos =() => {
             <h1> errorrrrrrr</h1>
         ):(
         <>
-            <h1>listo perriiiii</h1>
+            <h1 className="subtitle">courses</h1>
             <Cursos cursos={cursos}/>
         </>
         )}

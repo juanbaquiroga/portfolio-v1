@@ -5,8 +5,16 @@ const Curso =({curso})=>{
     console.log(curso)
     return(
         <div className="cardCurso">
-            <h1>hola</h1>
-            <h1>{curso.title}</h1>
+            <a href={curso.url} target="_blank"className="overlayContainer">
+                <img className="cardImage" src={curso.img} alt={curso.title} />
+                <div className="overlayMiddle">
+                    <p className="overlayText">see more</p>
+                </div>
+            </a>
+            <div className="cardText">
+                <h2 className="cardTitle">{curso.title}</h2>
+                <p className="cardId"> <b>ID:</b> {curso.id2}</p>
+            </div>
         </div>
     )
 }

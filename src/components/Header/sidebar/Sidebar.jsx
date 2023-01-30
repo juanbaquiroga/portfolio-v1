@@ -5,13 +5,13 @@ import './sidebar.css';
 const Sidebar = () => {
   return (
         <Menu right>
-        <a className="menu-item" href="/">
+        <a className="menu-item" href="#courses">
             courses
         </a>
-        <a className="menu-item" href="/salads">
+        <a className="menu-item" href="/">
             knowledge
         </a>
-        <a className="menu-item" href="/pizzas">
+        <a className="menu-item" href="/">
             projects
         </a>
         </Menu>
