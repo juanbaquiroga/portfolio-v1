@@ -1,11 +1,12 @@
 import React, { useState, useEffect} from "react";
 import { db } from '../../../firebase/firebase';
 import {getDocs, collection} from 'firebase/firestore'
-import Apts from './Knowledges'
 
-const ContainerCursos =() => {
+import Skills from './Skills'
+
+const ContainerSkills =() => {
     const [loading, setLoading] = useState(true)
-    const [knowledges, setKnowledges] = useState([])
+    const [cursos, setCursos] = useState([])
     const [error, setError] = useState(false);
 
     useEffect(()=>{
@@ -35,10 +36,10 @@ const ContainerCursos =() => {
         ):(
         <>
             <h1 className="subtitle">courses</h1>
-            <Knowledges knowledges={knowledges}/>
+            <Skills cursos={cursos}/>
         </>
         )}
         </main>
     )
 }
-export default ContainerCursos
+export default ContainerSkills

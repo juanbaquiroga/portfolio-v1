@@ -14,6 +14,11 @@ const Curso =({curso})=>{
             <div className="cardText">
                 <h2 className="cardTitle">{curso.title}</h2>
                 <p className="cardId"> <b>ID:</b> {curso.id2}</p>
+                <ul className="skillsList">
+                    {curso.skills.map((skill, index) => (
+                        <li className="skill" key={index}>{skill}</li>
+                    ))}
+                </ul>
             </div>
         </div>
     )

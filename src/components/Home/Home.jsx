@@ -1,5 +1,6 @@
 import React from "react";
 import Certificados from "./certificados/ContainerCursos";
+import Skills from  "./Skills/ContainerSkills"
 import down from "../../assets/down.png"
 
 const Home =() =>{
@@ -13,6 +14,7 @@ const Home =() =>{
             <a href="#courses"><img className="arrow-down" src={down} alt="arrow down" /></a>
         </div>
             <Certificados/>
+
 
         </>
     )
