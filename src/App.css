@@ -109,13 +109,7 @@ body{
   height: 150vh;
 }
 
-.containerCards{
-  display: flex;
-  flex-flow: column-reverse nowrap;
-  justify-content: center;
-  align-items: center;
-  gap: 30px
-}
+/* 
 
 .cardCurso:nth-child(2n){
   max-width: 950px;
@@ -191,4 +185,63 @@ body{
 
 .overlayText{
   color: var(--color1)
+} */
+
+
+.containerCards{
+  display: flex;
+  flex-flow: column-reverse nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
+.containerCards .card{
+  display: flex;
+  width: 300px;
+}
+
+
+
+.cardImage{
+  width: 300px;
+}
+
+.containerCards .card .slide {
+  width: 300px;
+  transition: 0.5s;
+  height: 230px;
+}
+
+.containerCards .card .slide.slide1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transition: .7s;
+}
+
+.containerCards .card:hover .slide.slide1{
+
+  transform: translatex(-150px);
+
+}
+
+.containerCards .card .slide.slide2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: .8s;
+  transform: translatex(-300px);
+  color: #ffffff;
+}
+
+.containerCards .card:hover .slide.slide2{
+
+  transform: translatex(-150px);
+
+}
+

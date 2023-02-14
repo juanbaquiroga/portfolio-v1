@@ -1,6 +1,5 @@
 import React from "react";
 import Certificados from "./certificados/ContainerCursos";
-import Skills from  "./Skills/ContainerSkills"
 import down from "../../assets/down.png"
 
 const Home =() =>{
