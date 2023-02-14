@@ -133,32 +133,33 @@ body{
   margin: 10px;
   gap: 30px;
 }
-
 .cardCurso:nth-child(2n) .cardText{
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
+  display: none;
   align-items: flex-start;
   color: var(--color1);
   text-overflow: ellipsis;
   min-width: 350px;
-  gap:10px
+  gap:10px;
 }
 .cardCurso:nth-child(2n +1) .cardText{
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
+  display: none;
+  
   align-items: flex-end;
   color: var(--color1);
   text-overflow: ellipsis;
   min-width: 350px;
   gap:10px
 }
+.cardCurso:hover .cardText{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
 
 .cardImage{
   opacity: 1;
   display: block;
-  width: 100%;
+  width: 350px;
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
