@@ -1,15 +1,19 @@
 import React from "react";
 import Skill from './Skill'
 
-
-const Skills = ({cursos})=>{
+const Skills = ({skills, type})=>{
     
+
     return(
-        <div className="containerCards">
-        {cursos.map((curso)=>
-            <Skill key={curso.id} curso={curso}/>
-        )}
+        <>
+        <div className="skillsCard">
+            <h3 className="skillsTitle">{type}</h3>
+            {skills.map((skill)=>
+                <Skill key={skill.id} skill={skill}/>
+            )}
+           
         </div>
+        </>
     )
 }
 export default Skills

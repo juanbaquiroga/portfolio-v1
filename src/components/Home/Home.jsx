@@ -1,20 +1,26 @@
 import React from "react";
-import Certificados from "./certificados/ContainerCursos";
-import down from "../../assets/down.png"
-
+import Cursos from "./cursos/ContainerCursos";
+import Skills from "./skills/ContainerSkill"
+import down from "../../assets/down.png";
+import { VscGithubAlt } from 'react-icons/vsc'
+import { CiLinkedin } from 'react-icons/ci'
 const Home =() =>{
     
     return(
         <>
-        
-        <div className="inicio">
+        <main className="inicio">
             <h1 className="title">Hi, I am <br></br> Juan Bautista</h1>
             <h3 className="title2">full stack developer</h3>
+
+            <div className="networks">
+                <a className="socialNetwork" href="https://github.com/juanbaquiroga"><VscGithubAlt style={{fontSize:'40px'}}/></a>
+                <a className="socialNetwork" href="https://linkedin.com/in/juanbaquiroga"><CiLinkedin style={{fontSize:'40px'}}/></a>
+            </div>
             <a href="#courses"><img className="arrow-down" src={down} alt="arrow down" /></a>
-        </div>
-            <Certificados/>
-
-
+        </main>
+            {/* <Certificados/> */}
+            <Cursos/>
+            <Skills/>
         </>
     )
 }

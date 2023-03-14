@@ -6,7 +6,7 @@ const Header =()=>{
     return(
         <>
             <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
-            <a href="/"><img className="logoNav" src={logo} alt="logo" /></a>
+            <a  href="/"><img className="logoNav" src={logo} alt="logo" /></a>
         </>
     )
 }
