@@ -67,7 +67,7 @@ const ContainerSkills =() => {
         <section id="Skills">
             {loading ?(
                 <>
-                <LinearProgress></LinearProgress>
+                <LinearProgress color="inherit"></LinearProgress>
                 </>
             ):error ?(
                 <h1 style={{textAlign: 'center'}}> error</h1>

@@ -8,10 +8,10 @@ const Curso =({curso})=>{
         <>
             <div className="card">
                 <figure className="cardImage">
-                    <img src={curso.img} />
+                    <img src={curso.img} alt={curso.title} />
                 </figure>
                 <div className="cardHeader">
-                    <a href="#">{curso.title}</a>
+                    <h3>{curso.title}</h3>
                     <form action={curso.url} target='_blank'>
                     <button className="cardIcon" type="submit">
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
@@ -27,7 +27,7 @@ const Curso =({curso})=>{
                     <p><b>ID: </b>{curso.id2}</p>
                 </div>
                 <div className="cardFooter">
-                {curso.skills.map((skill, index) => (
+                {curso.skills.map((skill) => (
                     <div className="cardMeta">
                         <span>{skill}</span>
                     </div>

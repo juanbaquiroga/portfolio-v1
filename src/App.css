@@ -288,8 +288,8 @@ body{
 
 
 
-/*----------------------------  skills  --------------------------------*/
 
+/*----------------------------  skills  --------------------------------*/
 
 #skills{
   margin: 100px 0;
@@ -347,4 +347,113 @@ body{
   border-radius: 10px;
   width:var(--w);
   animation: fillBar 3s ease-in;
+}
+
+
+
+
+/*----------------------------  projects  --------------------------------*/
+
+#projects{
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.projectCard{
+  width: 100%;
+  background-color: var(--color4);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  position: relative;
+  border-radius: 10px;
+}
+
+.projectImg{
+  border-radius: 10px;
+  width: 100%;
+}
+.projectContent{
+  border-radius: 9px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, .9);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .35s, visibility .2s;
+}
+
+.projectCard:hover > .projectContent{
+  visibility: visible;
+  opacity: 1;
+}
+.projectTitle{
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+.projectDescription{
+  width: 60%;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.projectTecnologies{
+  margin-top: 30px;
+  margin-bottom: 1.25rem;
+	border-bottom: 1px solid var(--color2);
+	padding-bottom: 1.25rem;
+	display: flex;
+  flex-flow: row nowrap;
+	align-items: center;
+}
+.tecnology{
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+	color: var(--color2);
+}
+
+.tecnology:not(:last-child):nth-child(n-1):after {
+  display: block;
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: currentcolor;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.projectLinks{
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 15px;
+}
+
+.projectLink{
+  font-size: 20px;
+  color: var(--color2);
+  border: 1px solid var(--color2);
+  padding: 7px 12px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.projectLink:hover{
+  background-color: var(--color2);
+  color: var(--color5);
 }

@@ -1,6 +1,7 @@
 import React from "react";
-import Cursos from "./cursos/ContainerCursos";
-import Skills from "./skills/ContainerSkill"
+import Courses from "./courses/ContainerCursos";
+import Skills from "./skills/ContainerSkill";
+import Projects from "./projects/ContainerPojects";
 import down from "../../assets/down.png";
 import { VscGithubAlt } from 'react-icons/vsc'
 import { CiLinkedin } from 'react-icons/ci'
@@ -18,9 +19,9 @@ const Home =() =>{
             </div>
             <a href="#courses"><img className="arrow-down" src={down} alt="arrow down" /></a>
         </main>
-            {/* <Certificados/> */}
-            <Cursos/>
+            <Courses/>
             <Skills/>
+            <Projects/>
         </>
     )
 }

@@ -1,6 +1,6 @@
 import React, { useState, useEffect} from "react";
 import { db } from '../../../firebase/firebase';
-import {getDocs, collection, query, where} from 'firebase/firestore';
+import {getDocs, collection} from 'firebase/firestore';
 import {LinearProgress } from "@mui/material";
 import Projects from './Projects';
 
@@ -37,9 +37,7 @@ const ContainerProjects =() => {
             ):(
                 <>
                     <h1 className="subtitle">Projects</h1>
-                    <div className="projectsList">
-                        <Projects projects={projects} />
-                    </div>
+                    <Projects projects={projects} />
                 </>
                 )}
         </section>

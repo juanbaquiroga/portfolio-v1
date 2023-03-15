@@ -1,5 +1,5 @@
 import React from "react";
-import Curso from './Curso.jsx'
+import Curso from './Course.jsx'
 import { useState } from "react";
 import down from '../../../assets/down.png'
 
