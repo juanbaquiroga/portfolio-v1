@@ -1,14 +1,15 @@
 import React from "react";
 import Courses from "./courses/ContainerCursos";
-import Skills from "./skills/ContainerSkills.JSX";
+import Skills from "./skills/SkillsContainer";
 import Projects from "./projects/ContainerPojects";
 import down from "../../assets/down.png";
-import { VscGithubAlt } from 'react-icons/vsc'
-import { CiLinkedin } from 'react-icons/ci'
+import { VscGithubAlt } from 'react-icons/vsc';
+import { CiLinkedin } from 'react-icons/ci';
 const Home =() =>{
     
     return(
         <>
+
         <main className="inicio">
             <h1 className="title">Hi, I am <br></br> Juan Bautista</h1>
             <h3 className="title2">full stack developer</h3>
