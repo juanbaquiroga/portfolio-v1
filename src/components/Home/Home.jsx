@@ -1,6 +1,6 @@
 import React from "react";
 import Courses from "./courses/ContainerCursos";
-import Skills from "./skills/SkillsContainer";
+import ContainerSkills from "./skills/SkillsContainer";
 import Projects from "./projects/ContainerPojects";
 import down from "../../assets/down.png";
 import { VscGithubAlt } from 'react-icons/vsc';
@@ -21,7 +21,7 @@ const Home =() =>{
             <a href="#courses"><img className="arrow-down" src={down} alt="arrow down" /></a>
         </main>
             <Courses/>
-            <Skills/>
+            <ContainerSkills/>
             <Projects/>
         </>
     )
