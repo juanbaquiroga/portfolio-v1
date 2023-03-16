@@ -64,7 +64,7 @@ const ContainerSkills =() => {
     },[])
 
     return(
-        <section id="Skills">
+        <section id="skills">
             {loading ?(
                 <>
                 <LinearProgress color="inherit"></LinearProgress>

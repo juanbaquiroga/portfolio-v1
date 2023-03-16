@@ -2,7 +2,7 @@ import React from 'react';
 import { stack as Menu } from 'react-burger-menu';
 import './sidebar.css';
 import { VscGithubAlt } from 'react-icons/vsc'
-import { CiLinkedin } from 'react-icons/ci'
+import { CiLinkedin, CiMail } from 'react-icons/ci'
 
 const Sidebar = () => {
   return (
@@ -16,9 +16,10 @@ const Sidebar = () => {
             <a className="menu-item" href="#projects">
                 projects
             </a>
-            <div className='menu-metworks'>
+            <div className='menuNetworks'>
                 <a className="network" href="https://github.com/juanbaquiroga"><VscGithubAlt style={{fontSize:'40px'}}/></a>
                 <a className="network" href="https://linkedin.com/in/juanbaquiroga"><CiLinkedin style={{fontSize:'40px'}}/></a>
+                <a className="network" href="mailto:juanbaquiroga@gmail.com?subject=<Feedback>&body=Message"><CiMail style={{fontSize:'40px'}}/></a>
             </div>
         </Menu>
   );

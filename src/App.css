@@ -12,6 +12,7 @@
   --color4: #404040;
   --color5: #1E1E1E;
   --color6: #000000;
+  --color7: #121212;
 }
 
 /*----------------------------  keyframes  --------------------------------*/
@@ -355,10 +356,10 @@ body{
 /*----------------------------  projects  --------------------------------*/
 
 #projects{
-  height: 100vh;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  padding: 0 0 150px 0;
 }
 .projectCard{
   width: 100%;
@@ -391,7 +392,7 @@ body{
   color: #fff;
   visibility: hidden;
   opacity: 0;
-  transition: opacity .35s, visibility .2s;
+  transition: opacity .4s, visibility .6s;
 }
 
 .projectCard:hover > .projectContent{
@@ -457,3 +458,108 @@ body{
   background-color: var(--color2);
   color: var(--color5);
 }
+
+
+
+
+/*----------------------------  footer  --------------------------------*/
+
+
+
+.footer{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color7);
+  height: 70vh;
+}
+
+.footerLogo{
+  height: 70%;
+  padding: 0 20px;
+  border-right: solid 1px var(--color2);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items:flex-end;
+  justify-content: space-evenly;
+}
+
+
+.footerInfo{
+  gap: 23%;
+  height: 70%;
+  width: 350px;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  color: var(--color1);
+  justify-content:initial;
+  flex-flow: column nowrap;
+  border-right: 1px solid var(--color3);
+}
+.footerTitle{
+  color: var(--color1);
+  font-size: 30px;
+}
+.footerNetworks{
+  padding: 1px;
+}
+
+.footerFormContainer{
+  gap: 10%;
+  height: 70%;
+  width: 400px;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  color: var(--color1);
+  flex-flow: column nowrap;
+}
+
+.footerForm{
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+  width: 90%;
+}
+
+.formDiv{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: baseline;
+  justify-content: baseline;
+}
+.formInput{
+  width: 100%;
+  border-radius: 5px;
+  height: 20px;
+  padding-left: 8px;
+  font-size: 15px;
+  border: none;
+}
+.inputMessage{
+  width: 100%;
+  border-radius: 5px;
+  height: 55px;
+  padding: none;
+  font-family: var(--typo2);
+  padding-left: 5px;
+}
+
+.inputSend {
+  padding: 10px 25px;
+  font-weight: 700;
+  color: var(--color0);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  border-radius: 5px;
+}
+.inputSend:hover{
+  background: var(--color1);
+  color: var(--color6);
+}
+
