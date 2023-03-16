@@ -1,8 +1,8 @@
 import React, { useState, useEffect} from "react";
-import { db } from '../../../firebase/firebase';
+import { db } from '../../../firebase/firebase.js';
 import {getDocs, collection, query, where} from 'firebase/firestore';
 import {LinearProgress } from "@mui/material";
-import Skills from './Skills';
+import Skills from './Skills.jsx';
 
 const ContainerSkills =() => {
     const [loading, setLoading] = useState(true)
@@ -67,7 +67,6 @@ const ContainerSkills =() => {
         <section id="skills">
             {loading ?(
                 <>
-                <LinearProgress color="inherit"></LinearProgress>
                 </>
             ):error ?(
                 <h1 style={{textAlign: 'center'}}> error</h1>
