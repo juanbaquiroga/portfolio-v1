@@ -3,7 +3,7 @@ import { db } from '../../../firebase/firebase.js';
 import {getDocs, collection, query, where} from 'firebase/firestore';
 import Skills from './Skills.jsx';
 
-const ContainerSkills =() => {
+const ContainerSkills = () => {
     const [loading, setLoading] = useState(true)
     const [frontend, setFrontend] = useState([]);
     const [backend, setBackend] = useState([])
@@ -79,6 +79,8 @@ const ContainerSkills =() => {
                     </div>
                 </>
                 )}
-        </section>)
-}
-export default ContainerSkills
+        </section>
+    )
+};
+
+export default ContainerSkills;
