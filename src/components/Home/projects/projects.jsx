@@ -1,10 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 import Project from './Project'
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Projects = ({projects})=>{
+    const [width, setWidth] = useState(window.innerWidth);
+    const desktop = width > 768
     var settings = {
         dots: true,
         infinite: true,
@@ -13,12 +15,12 @@ const Projects = ({projects})=>{
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 5000,
-        arrows: true,
+        arrows: desktop,
       };
       
       return (
         <>
-        <Slider {...settings} style={{width:"80%"}}>
+        <Slider {...settings} style={{width:"100%"}}>
             {projects.map((project)=>
                 <Project key={project.id} project={project}/>
             )}

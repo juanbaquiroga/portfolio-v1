@@ -187,24 +187,7 @@ body{
 	align-items: center;
 	justify-content: space-between;
 }
-.cardHeader a {
-  font-weight: 600;
-  font-size: 1.375rem;
-  line-height: 1.25;
-  padding-right: 1rem;
-  text-decoration: none;
-  color: inherit;
-  will-change: transform;
 
-}
-.cardHeader	a:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-}
 .cardIcon {
   border: 0;
 	background-color: var(--color4);
@@ -563,3 +546,257 @@ body{
   color: var(--color6);
 }
 
+
+
+
+
+/*======================================================================*/
+/*----------------------------  mobile  --------------------------------*/
+/*======================================================================*/
+
+
+@media screen  and (max-width: 768px){
+  
+  .logoNav{
+    width: 65px;  
+  }
+  .title{
+    font-size: 30px;
+  }
+  .title2{
+    font-size: 13px;
+  }
+  
+  .arrow-down{
+    width: 80px;
+  }
+  
+  /*----------------------------  cursos  --------------------------------*/
+  
+  .subtitle{
+    font-size: 35px;
+    margin: 35px 0 40px 0;
+  }
+  
+  #courses{
+    margin: 20px 0;
+  }
+  
+  .cardList {
+    gap: 10px;
+    margin: 0 10%;
+  }
+  
+  .card {
+    width: 150px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .card:hover{
+    transform: translatey(-2px);
+  }
+  
+  .cardImage {
+    border-radius: 5px;
+  }
+  
+  .cardHeader {
+    margin-top: 15px;
+    font-size: 10px;
+  }
+
+  .cardIcon {
+    display: none;
+  }
+  .cardFooter {
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+  .cardContent{
+    font-size: 8px;
+  }
+  
+  .cardMeta {	
+    font-size: 12px;
+  }
+  
+  /*----------------------------  skills  --------------------------------*/
+  
+  #skills{
+    margin: 50px 0;
+  }
+  .skillsTitle{
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+  .skillsList{
+    padding: 10%;
+    gap: 10px;
+  }
+  
+  .skillsCard{
+    width: 100%;
+    height: 100%;
+    gap: 12px;
+    border-radius: 15px;
+    padding: 0 10px 15px 10px;
+  }
+  .skill{
+    gap: 0px;
+    font-weight: 100;
+    font-size: 15px
+  }
+  .skillBar{
+    width: 100%;
+    height: 2px;
+  }
+  
+  .skillBarProgress{
+    height: 2px;
+  }
+  
+  
+  
+  
+  /*----------------------------  projects  --------------------------------*/
+  
+  #projects{
+    padding: 100px 10px 200px 10px;
+  }
+  .projectCard{
+    margin-top: 50px;
+    border-radius: 10px;
+  }
+  .projectTitle{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .projectDescription{
+    display: none;
+  }
+  
+  .projectTecnologies{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 8px
+  }
+  
+  .projectLinks{
+    gap: 10px;
+  }
+  
+  .projectLink{
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 20px;
+  }
+  
+  
+  
+  
+  /*----------------------------  footer  --------------------------------*/
+  
+  
+  
+  .footer{
+    flex-flow: column nowrap;
+    height: 100%;
+  }
+  .footerMobile{
+    display: flex;
+    flex-flow: column nowrap;
+
+  }
+  .footerLogo{
+    height: 100%;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    border-right: none;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items:center;
+    border-bottom: 1px solid var(--color4);
+  }
+  
+  
+  .footerInfo{
+    gap: 15PX;
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    justify-content:initial;
+    border-right: none;
+  }
+  .footerTitle{
+    color: var(--color1);
+    font-size: 30px;
+  }
+  .footerNetworks{
+    padding: 1px;
+  }
+  
+  .footerFormContainer{
+    gap: 10%;
+    height: 70%;
+    width: 400px;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    color: var(--color1);
+    flex-flow: column nowrap;
+  }
+  
+  .footerForm{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    width: 90%;
+  }
+  
+  .formDiv{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: baseline;
+    justify-content: baseline;
+  }
+  .formInput{
+    width: 100%;
+    border-radius: 5px;
+    height: 20px;
+    padding-left: 8px;
+    font-size: 15px;
+    border: none;
+  }
+  .inputMessage{
+    width: 100%;
+    border-radius: 5px;
+    height: 55px;
+    padding: none;
+    font-family: var(--typo2);
+    padding-left: 5px;
+  }
+  
+  .inputSend {
+    padding: 10px 25px;
+    font-weight: 700;
+    color: var(--color0);
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    border-radius: 5px;
+  }
+  .inputSend:hover{
+    background: var(--color1);
+    color: var(--color6);
+  }
+  
+  
+}

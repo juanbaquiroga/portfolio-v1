@@ -7,9 +7,9 @@ const Curso =({curso})=>{
     return (
         <>
             <div className="card">
-                <figure className="cardImage">
+                <a href={curso.url} rel="noreferrer" target='_blank'><figure className="cardImage">
                     <img src={curso.img} alt={curso.title} />
-                </figure>
+                </figure></a>
                 <div className="cardHeader">
                     <h3>{curso.title}</h3>
                     <form action={curso.url} target='_blank'>
@@ -24,7 +24,7 @@ const Curso =({curso})=>{
                     </form>
                 </div>
                 <div className="cardContent">
-                    <p><b>ID: </b>{curso.id2}</p>
+                    <p><b>ID:</b> {curso.id2}</p>
                 </div>
                 <div className="cardFooter">
                 {curso.skills.map((skill) => (
