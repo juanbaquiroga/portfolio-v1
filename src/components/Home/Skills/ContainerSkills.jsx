@@ -1,7 +1,6 @@
 import React, { useState, useEffect} from "react";
 import { db } from '../../../firebase/firebase.js';
 import {getDocs, collection, query, where} from 'firebase/firestore';
-import {LinearProgress } from "@mui/material";
 import Skills from './Skills.jsx';
 
 const ContainerSkills =() => {
@@ -80,7 +79,6 @@ const ContainerSkills =() => {
                     </div>
                 </>
                 )}
-        </section>
-    )}
-
+        </section>)
+}
 export default ContainerSkills

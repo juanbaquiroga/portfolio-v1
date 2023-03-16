@@ -1,6 +1,6 @@
 import React from "react";
 import Courses from "./courses/ContainerCursos";
-import Skills from "./skills/ContainerSkill";
+import Skills from "./skills/ContainerSkills";
 import Projects from "./projects/ContainerPojects";
 import down from "../../assets/down.png";
 import { VscGithubAlt } from 'react-icons/vsc'
