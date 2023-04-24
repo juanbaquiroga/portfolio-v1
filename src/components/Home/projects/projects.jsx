@@ -20,7 +20,7 @@ const Projects = ({projects})=>{
       
       return (
         <>
-        <Slider {...settings} style={{width:"100%"}}>
+        <Slider {...settings} className="sliderProjects">
             {projects.map((project)=>
                 <Project key={project.id} project={project}/>
             )}
