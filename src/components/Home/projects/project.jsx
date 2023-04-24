@@ -13,7 +13,11 @@ const Project =({project})=>{
                     </div>
                     <div className="projectLinks">
                         <a className="projectLink" rel="noreferrer"  target="_blank" href={project.url}>View Project</a>
-                        <a className="projectLink" rel="noreferrer"  target="_blank" href={project.github}>View Repo</a>
+                        {project.github?(
+                            <a className="projectLink" rel="noreferrer"  target="_blank" href={project.github}>View Repo</a>
+                        ):(
+                            <></>
+                        )}
                     </div>
                 </div>
             </div>
