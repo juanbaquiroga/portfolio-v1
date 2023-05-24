@@ -27,7 +27,7 @@ const Cursos = ({cursos})=>{
                     <Curso key={curso.id} curso={curso}/>
                 )}
             </div>
-            <a href="#courses" className="buttonSeeLess" onClick={seeLess}><img src={down} alt="arrowUp" /></a>
+            <a alt='courses' href="#courses" className="buttonSeeLess" onClick={seeLess}><img src={down} alt="arrowUp" /></a>
             </>
         )}
         </>

@@ -12,9 +12,9 @@ const Project =({project})=>{
                         ))}
                     </div>
                     <div className="projectLinks">
-                        <a className="projectLink" rel="noreferrer"  target="_blank" href={project.url}>View Project</a>
+                        <a alt={project.url} className="projectLink" rel="noreferrer"  target="_blank" href={project.url}>View Project</a>
                         {project.github?(
-                            <a className="projectLink" rel="noreferrer"  target="_blank" href={project.github}>View Repo</a>
+                            <a alt={project.github} className="projectLink" rel="noreferrer"  target="_blank" href={project.github}>View Repo</a>
                         ):(
                             <></>
                         )}

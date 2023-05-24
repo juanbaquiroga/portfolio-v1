@@ -7,7 +7,7 @@ const Curso =({curso})=>{
     return (
         <>
             <div className="card">
-                <a href={curso.url} rel="noreferrer" target='_blank'><figure className="cardImage">
+                <a alt={curso.title} href={curso.url} rel="noreferrer" target='_blank'><figure className="cardImage">
                     <img src={curso.img} alt={curso.title} />
                 </figure></a>
                 <div className="cardHeader">

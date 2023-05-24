@@ -15,8 +15,8 @@ const Home =() =>{
             <h3 className="title2">full stack developer</h3>
 
             <div className="networks">
-                <a className="socialNetwork" href="https://github.com/juanbaquiroga"><VscGithubAlt style={{fontSize:'40px'}}/></a>
-                <a className="socialNetwork" href="https://linkedin.com/in/juanbaquiroga"><CiLinkedin style={{fontSize:'40px'}}/></a>
+                <a alt='github' className="socialNetwork" href="https://github.com/juanbaquiroga"><VscGithubAlt style={{fontSize:'40px'}}/></a>
+                <a alt='linkedin' className="socialNetwork" href="https://linkedin.com/in/juanbaquiroga"><CiLinkedin style={{fontSize:'40px'}}/></a>
             </div>
             <a href="#courses"><img className="arrow-down" src={down} alt="arrow down" /></a>
         </main>

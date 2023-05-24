@@ -7,19 +7,19 @@ import { CiLinkedin, CiMail } from 'react-icons/ci'
 const Sidebar = () => {
   return (
         <Menu right>
-            <a className="menu-item" href="#courses">
+            <a alt='courses' className="menu-item" href="#courses">
                 courses
             </a>
-            <a className="menu-item" href="#skills">
+            <a alt='skills' className="menu-item" href="#skills">
                 Skills
             </a>
-            <a className="menu-item" href="#projects">
+            <a alt='projects' className="menu-item" href="#projects">
                 projects
             </a>
             <div className='menuNetworks'>
-                <a className="network" href="https://github.com/juanbaquiroga"><VscGithubAlt style={{fontSize:'40px'}}/></a>
-                <a className="network" href="https://linkedin.com/in/juanbaquiroga"><CiLinkedin style={{fontSize:'40px'}}/></a>
-                <a className="network" href="mailto:juanbaquiroga@gmail.com?subject=<Feedback>&body=Message"><CiMail style={{fontSize:'40px'}}/></a>
+                <a alt='github' className="network" href="https://github.com/juanbaquiroga"><VscGithubAlt style={{fontSize:'40px'}}/></a>
+                <a alt='linkedin' className="network" href="https://linkedin.com/in/juanbaquiroga"><CiLinkedin style={{fontSize:'40px'}}/></a>
+                <a alt='email' className="network" href="mailto:juanbaquiroga@gmail.com?subject=<Feedback>&body=Message"><CiMail style={{fontSize:'40px'}}/></a>
             </div>
         </Menu>
   );

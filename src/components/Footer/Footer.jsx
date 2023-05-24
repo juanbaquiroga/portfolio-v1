@@ -37,7 +37,7 @@ const Footer =() =>{
             {desktop?(<>
                 <footer className="footer">
                     <section className="footerLogo">
-                        <a  href="/"><img src={logo} alt="logo" /></a>
+                        <a alt='home'  href="/"><img src={logo} alt="logo" /></a>
                         <p style={{fontSize:'12px', color:'var(--color2)', display:'flex', alignItems:'center'}}><BiCopyright style={{fontSize:'15px', color:'var(--color2)', marginRight:'5px'}}/>2023 - Juan Bautista Quiroga</p>
                     </section>
                     <section className="footerInfo">
@@ -47,10 +47,10 @@ const Footer =() =>{
                             <p><b>Email:</b> juanbaquiroga@gmail.com</p>
                         </div>
                         <div className='footerNetworks'>
-                            <a className="network" href="https://github.com/juanbaquiroga"><VscGithubAlt style={{fontSize:'40px'}}/></a>
-                            <a className="network" href="https://linkedin.com/in/juanbaquiroga"><CiLinkedin style={{fontSize:'40px'}}/></a>
-                            <a className="network" href="mailto:juanbaquiroga@gmail.com?subject=<Feedback>&body=Message"><CiMail style={{fontSize:'40px'}}/></a>
-                            <a className="network" href="https://wa.me/5493329684391"><BsWhatsapp style={{fontSize:'35px'}}/></a>
+                            <a alt='github' className="network" href="https://github.com/juanbaquiroga"><VscGithubAlt style={{fontSize:'40px'}}/></a>
+                            <a alt='linkedin' className="network" href="https://linkedin.com/in/juanbaquiroga"><CiLinkedin style={{fontSize:'40px'}}/></a>
+                            <a alt='email' className="network" href="mailto:juanbaquiroga@gmail.com?subject=<Feedback>&body=Message"><CiMail style={{fontSize:'40px'}}/></a>
+                            <a alt='whatsapp' className="network" href="https://wa.me/5493329684391"><BsWhatsapp style={{fontSize:'35px'}}/></a>
                         </div>
                     </section>
                     <section className="footerFormContainer">
@@ -116,7 +116,7 @@ const Footer =() =>{
                     </section>
                     <section className="footerMobile">
                         <div className="footerLogo">
-                            <a  href="/"><img src={logo} alt="logo" /></a>
+                            <a  alt="home" href="/"><img src={logo} alt="logo" /></a>
                             <p style={{fontSize:'12px', color:'var(--color2)', display:'flex', alignItems:'center'}}><BiCopyright style={{fontSize:'15px', color:'var(--color2)', marginRight:'5px'}}/>2023 - Juan Bautista Quiroga</p>
                         </div>
                         <div className="footerInfo">
@@ -126,10 +126,10 @@ const Footer =() =>{
                                 <p><b>Email:</b> juanbaquiroga@gmail.com</p>
                             </div>
                             <div className='footerNetworks'>
-                                <a className="network" href="https://github.com/juanbaquiroga"><VscGithubAlt style={{fontSize:'40px'}}/></a>
-                                <a className="network" href="https://linkedin.com/in/juanbaquiroga"><CiLinkedin style={{fontSize:'40px'}}/></a>
-                                <a className="network" href="mailto:juanbaquiroga@gmail.com?subject=<Feedback>&body=Message"><CiMail style={{fontSize:'40px'}}/></a>
-                                <a className="network" href="https://wa.me/5493329684391"><BsWhatsapp style={{fontSize:'35px'}}/></a>
+                                <a alt='github' className="network" href="https://github.com/juanbaquiroga"><VscGithubAlt style={{fontSize:'40px'}}/></a>
+                                <a alt='likedin' className="network" href="https://linkedin.com/in/juanbaquiroga"><CiLinkedin style={{fontSize:'40px'}}/></a>
+                                <a alt='email' className="network" href="mailto:juanbaquiroga@gmail.com?subject=<Feedback>&body=Message"><CiMail style={{fontSize:'40px'}}/></a>
+                                <a alt='whatsapp' className="network" href="https://wa.me/5493329684391"><BsWhatsapp style={{fontSize:'35px'}}/></a>
                             </div>
                         </div>
                     </section>
