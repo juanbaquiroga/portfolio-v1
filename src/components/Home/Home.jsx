@@ -1,7 +1,7 @@
 import React from "react";
 import Courses from "./courses/ContainerCursos";
 import ContainerSkills from "./skills/SkillsContainer";
-import Projects from "./projects/ContainerPojects";
+import Projects from "./projects/containerPojects";
 import down from "../../assets/down.png";
 import { VscGithubAlt } from 'react-icons/vsc';
 import { CiLinkedin } from 'react-icons/ci';

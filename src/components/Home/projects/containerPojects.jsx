@@ -2,7 +2,7 @@ import React, { useState, useEffect} from "react";
 import { db } from '../../../firebase/firebase';
 import {getDocs, collection} from 'firebase/firestore';
 import {LinearProgress } from "@mui/material";
-import Projects from './Projects';
+import Projects from './projects';
 
 const ContainerProjects =() => {
     const [loading, setLoading] = useState(true)

@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import Project from './Project'
+import Project from './project'
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
